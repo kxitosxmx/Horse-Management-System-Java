@@ -1,0 +1,4 @@
+Race Results:
+3rd horse: Sunny , Race Time: 70
+2rd horse: Nebula , Race Time: 50
+1rd horse: Maelstrom , Race Time: 10

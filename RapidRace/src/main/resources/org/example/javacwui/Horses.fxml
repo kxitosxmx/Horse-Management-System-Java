@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="700.0" prefWidth="1280.0" style="-fx-background-color: #ddd;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javacwui.HorseController">
+    <children>
+        <AnchorPane layoutY="223.0" prefHeight="477.0" prefWidth="206.0" style="-fx-background-color: #222;">
+            <children>
+                <Button layoutY="33.0" mnemonicParsing="false" onMouseClicked="#switchToHome" opacity="0.8" prefHeight="47.0" prefWidth="205.0" text="Home" />
+                <Button layoutY="125.0" mnemonicParsing="false" onMouseClicked="#switchToHorses" opacity="0.8" prefHeight="47.0" prefWidth="205.0" style="-fx-background-color: #E5FF96;" text="Horses" />
+                <Button layoutY="207.0" mnemonicParsing="false" onMouseClicked="#switchToRace" opacity="0.8" prefHeight="47.0" prefWidth="205.0" text="Race" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="224.0" prefWidth="206.0" style="-fx-background-color: #444;">
+            <children>
+            <Text fill="WHITE" layoutX="22.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rapid Race">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="131.0" fitWidth="143.0" layoutX="32.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Horse.logo.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+      <AnchorPane fx:id="UpdateHorse" layoutX="590.0" layoutY="15.0" prefHeight="682.0" prefWidth="343.0" style="-fx-background-color: gray;">
+         <children>
+            <Text layoutX="26.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horse ID">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="Uname" layoutX="24.0" layoutY="113.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horse Name">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Text layoutX="26.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jockey">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="Ujockey" layoutX="24.0" layoutY="169.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="Uage" layoutX="24.0" layoutY="225.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breed">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="Ubreed" layoutX="24.0" layoutY="285.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Races Won">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="UraceWon" layoutX="24.0" layoutY="338.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Races">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="UtotalRace" layoutX="24.0" layoutY="397.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="27.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <ImageView fx:id="UimageView" fitHeight="176.0" fitWidth="178.0" layoutX="25.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="UbrowseButton" layoutX="215.0" layoutY="458.0" mnemonicParsing="false" onMouseClicked="#UbrowseButtonClicked" prefHeight="26.0" prefWidth="73.0" text="Browse" />
+            <Text layoutX="85.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Horse">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Button fx:id="updateButton" layoutX="215.0" layoutY="590.0" mnemonicParsing="false" onMouseClicked="#updateButtonClicked" prefHeight="44.0" prefWidth="87.0" text="UPDATE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <ChoiceBox fx:id="UhorseChoiceBox" layoutX="24.0" layoutY="70.0" prefHeight="26.0" prefWidth="178.0" />
+            <ChoiceBox fx:id="Ugroup" layoutX="214.0" layoutY="397.0" prefHeight="26.0" prefWidth="98.0" />
+            <Text layoutX="214.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AddHorse" layoutX="224.0" layoutY="15.0" prefHeight="682.0" prefWidth="343.0" style="-fx-background-color: gray;">
+         <children>
+            <Text layoutX="26.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horse ID">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="Aname" layoutX="24.0" layoutY="113.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horse Name">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="Ahid" layoutX="24.0" layoutY="64.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jockey">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="Ajockey" layoutX="24.0" layoutY="169.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="Aage" layoutX="24.0" layoutY="225.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Breed">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="Abreed" layoutX="24.0" layoutY="285.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Races Won">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="AraceWon" layoutX="24.0" layoutY="338.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="26.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Races">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <TextField fx:id="AtotalRaces" layoutX="24.0" layoutY="397.0" prefHeight="26.0" prefWidth="178.0" />
+            <Text layoutX="27.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <ImageView fx:id="AimageView" fitHeight="176.0" fitWidth="178.0" layoutX="25.0" layoutY="458.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="AbrowseButton" layoutX="215.0" layoutY="458.0" mnemonicParsing="false" onMouseClicked="#AbrowseButtonClicked" prefHeight="26.0" prefWidth="73.0" text="Browse" />
+            <Text layoutX="85.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Horse">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <Button fx:id="addButton" layoutX="215.0" layoutY="590.0" mnemonicParsing="false" onMouseClicked="#addButtonClicked" prefHeight="44.0" prefWidth="87.0" text="ADD">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+            <Text layoutX="217.0" layoutY="387.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Group">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="Agroup" layoutX="217.0" layoutY="397.0" prefHeight="26.0" prefWidth="98.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="DeteleHorse" layoutX="956.0" layoutY="15.0" prefHeight="200.0" prefWidth="310.0" style="-fx-background-color: gray;">
+         <children>
+            <Text layoutX="68.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Delete Horse">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="DhorseChoiceBox" layoutX="30.0" layoutY="74.0" prefHeight="26.0" prefWidth="122.0" />
+            <Text layoutX="30.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horse ID">
+               <font>
+                  <Font size="16.0" />
+               </font></Text>
+            <Button fx:id="deleteHorse" layoutX="32.0" layoutY="119.0" mnemonicParsing="false" onMouseClicked="#deleteButtonClicked" prefHeight="44.0" prefWidth="87.0" text="DELETE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+      <Button layoutX="956.0" layoutY="265.0" mnemonicParsing="false" onMouseClicked="#switchToViewHorse" prefHeight="85.0" prefWidth="310.0" text="View All Horse" />
+      <Button layoutX="956.0" layoutY="365.0" mnemonicParsing="false" onMouseClicked="#saveButtonClicked" prefHeight="85.0" prefWidth="310.0" text="Save" />
+      <Button layoutX="956.0" layoutY="468.0" mnemonicParsing="false" onMouseClicked="#switchToRace" prefHeight="85.0" prefWidth="310.0" text="Go Race" />
+      <Button layoutX="956.0" layoutY="573.0" mnemonicParsing="false" onMouseClicked="#loadButtonClicked" prefHeight="85.0" prefWidth="310.0" text="Load" />
+    </children>
+</Pane>

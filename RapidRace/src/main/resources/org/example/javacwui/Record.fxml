@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="700.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javacwui.RecordController">
+    <children>
+        <AnchorPane layoutY="223.0" prefHeight="477.0" prefWidth="206.0" style="-fx-background-color: #222;">
+         <children>
+            <Button fx:id="showButton1" layoutX="39.0" layoutY="384.0" mnemonicParsing="false" onMouseClicked="#ExitButtonClicked" prefHeight="61.0" prefWidth="127.0" style="-fx-background-color: #B00;" text="Exit">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="224.0" prefWidth="206.0" style="-fx-background-color: #444;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="143.0" layoutX="32.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Horse.logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="22.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rapid Race">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+        </AnchorPane>
+      <AnchorPane layoutX="256.0" layoutY="41.0" prefHeight="578.0" prefWidth="778.0">
+         <children>
+            <BarChart fx:id="barChart" prefHeight="586.0" prefWidth="781.0">
+              <xAxis>
+                <CategoryAxis label="Place | HorseName" side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" label="Time Taken" side="LEFT" />
+              </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <Button fx:id="showButton" layoutX="618.0" layoutY="627.0" mnemonicParsing="false" onMouseClicked="#showButtonClick" prefHeight="52.0" prefWidth="113.0" text="Show">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+    </children>
+</Pane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ddd;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javacwui.HomeController">
+   <children>
+      <AnchorPane layoutY="223.0" prefHeight="477.0" prefWidth="206.0" style="-fx-background-color: #222;">
+         <children>
+            <Button id="home" fx:id="home" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#switchToHome" opacity="0.8" prefHeight="47.0" prefWidth="205.0" style="-fx-background-color: #E5FF96" text="Home" />
+            <Button id="horses" fx:id="horses" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#switchToHorses" opacity="0.8" prefHeight="47.0" prefWidth="205.0" text="Horses" />
+            <Button id="race" fx:id="race" layoutY="207.0" mnemonicParsing="false" onMouseClicked="#switchToRace" opacity="0.8" prefHeight="47.0" prefWidth="205.0" text="Race" />
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="224.0" prefWidth="206.0" style="-fx-background-color: #444;">
+         <children>
+            <ImageView fitHeight="131.0" fitWidth="143.0" layoutX="32.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Horse.logo.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="22.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rapid Race">
+               <font>
+                  <Font size="33.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="729.0" fitWidth="1245.0" layoutX="206.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Horse_bg.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="329.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome To Rapid Race">
+         <font>
+            <Font name="Verdana Bold Italic" size="54.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
